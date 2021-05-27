@@ -1,0 +1,88 @@
+body{
+    /* background-image: url("https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg"); */
+    background-image: url("https://i.pinimg.com/originals/0a/4d/cb/0a4dcb92fa2d3c601b58d72720d6bec4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.main{
+    background-color: #589ae6;
+    margin:auto;
+    margin-top:5vh;
+    width:70vw;
+    height:90vh;
+    padding-top: 5vh !important;
+    padding:10vh;
+}
+
+.mapa{
+    background-color: rgb(209, 134, 209);
+    height: 50vh;
+    width: 49%;
+    margin-left:0px;
+    padding:10px;
+    float:left;
+}
+.dane{
+    background-color: #ec85db;
+    height: 50vh;
+    float:right;
+    width: 49%;
+    margin-right: 0px;
+    padding:10px;
+    overflow: auto;
+    
+}
+
+.kierunki{
+    clear:both;
+    background-color: #b269e4;
+    width: 100%;
+    height:25%;
+    margin-top:30px;
+    padding:30px;
+    
+    
+}
+.kierunki, .dane, .mapa{
+    border-width: 8px;
+    border-style: solid;
+    border-color: hsl(234, 35%, 52%);
+    -webkit-box-shadow: 6px 5px 15px 5px #000000; 
+    box-shadow: 6px 5px 15px 5px #000000;
+}
+H2{
+    text-align: center; 
+}
+#map {
+    height: 95%;
+    width: 100%;
+  }
+.dane span,a{
+    margin-left: 30px;
+}
+.bold{
+    margin-left:0px !important;
+    font-weight: bold;
+}
+.main, .dane, .kierunki, .mapa{
+	/* other styles */
+	background: rgba(255, 255, 255, .4);
+	-webkit-backdrop-filter: blur(1px);
+	backdrop-filter: blur(1px);
+}
+  @-webkit-keyframes autofill {
+  to {
+  color: #666;
+  background: transparent; } }
+
+  @keyframes autofill {
+  to {
+  color: #666;
+  background: transparent; } }
+
+  input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<kierunki>
+	<kierunek>
+		<nazwa>Architektura</nazwa>
+		<specjalnosci>architektura i urbanistyka, konserwacja i ochrona zabytków, architektura i urbanistyka w języku angielskim, architektura światła</specjalnosci>
+		<czas>7 semestrów = 3,5 roku</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Wyższe studia I-ego stopnia w ramach kierunku architektura i urbanistyka trwają trzy i pół roku (7 semestrów) i kończą się uzyskaniem tytułu inżyniera architekta. Absolwent posiada ogólne wykształcenie w zakresie architektury i urbanistyki umożliwiające mu kontynuację edukacji na poziomie II-go stopnia (magisterskim), jak również przygotowanie zawodowe do pracy w biurze projektowym, jednostkach planowania przestrzennego, firmach związanych z realizacją inwestycji budowlanych, itp.</kwalifikacje>
+		<dziekanat>	Budynek G, ul. Obrońców Tobruku 5, 48-300 Nysa</dziekanat>
+		<szerokosc>50.48135922549875</szerokosc>
+		<dlugosc>17.320173223537797</dlugosc>
+		<telefon>77 4091680</telefon>
+		<email>dziekanat.arch@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=4</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Bezpieczeństwo wewnętrzne</nazwa>
+		<specjalnosci>penitencjarystyka (nowość), bezpieczeństwo ekonomiczne, bezpieczeństwo systemów informatycznych, kryminologia i kryminalistyka, zarządzanie systemami bezpieczeństwa</specjalnosci>
+		<czas>6 semestrów = 3 lata</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Kierunek bezpieczeństwo wewnętrzne łączy w sobie cechy i wymagania stawiane współczesnym absolwentom studiów licencjackich, którzy powinni posiadać podstawową wiedzę z dziedziny prawa, ekonomi, organizacji i zarządzania, finansów, technik informatycznych z szeroką wiedzą z zakresu funkcjonowania administracji publicznej (rządowej i samorządowej) w Polsce w obszarze wykonywania zadań publicznych w dziedzinie bezpieczeństwa wewnętrznego. Kierunek ten można uważać za interdyscyplinarny z punktu widzenia zarządzania bezpieczeństwem we współczesnych organizacjach publicznych i niepublicznych. Absolwent kierunku bezpieczeństwo wewnętrzne będzie specjalistą z zakresu zarządzania bezpieczeństwem wewnętrznym na różnych szczeblach administracji publicznej oraz zarządzania bezpieczeństwem ekonomicznym przedsiębiorstwa.</kwalifikacje>
+		<dziekanat>Budynek A, ul. Chodowieckiego, 48-300 Nysa</dziekanat>
+		<szerokosc>50.474742053680934</szerokosc>
+		<dlugosc>17.337604016700222</dlugosc>
+		<telefon>77 4090852</telefon>
+		<email>dziekanat.bezp@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=5</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Dietetyka</nazwa>
+		<specjalnosci>dietetyka administracyjna, dietetyka kliniczna, dietetyka sportowa</specjalnosci>
+		<czas>6 semestrów = 3 lata</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Wyższe studia zawodowe na kierunku dietetyka trwają 3 lata (6 semestrów) i kończą się uzyskaniem tytułu licencjata. Absolwenci powinni posiadać podstawową wiedzę z zakresu żywienia człowieka zdrowego i chorego oraz technologii przygotowywania potraw. Po ukończeniu studiów są przygotowani do: planowania racjonalnego żywienia dla różnych grup ludności, planowania i przygotowywania potraw wchodzących w skład poszczególnych diet zgodnie z obowiązującą klasyfikacją, oceny stanu odżywienia, sposobu żywienia i rozpoznania niedożywienia, zapobiegania chorobom żywieniowo-zależnym, oceny wzajemnego wpływu farmakoterapii i żywienia, kontrolowania jakości produktów żywnościowych i warunków ich przechowywania oraz produkcji potraw zgodnie z zasadami systemu Analizy Zagrożeń i Krytycznych Punktów Kontroli (Hazard Analyzes Critical Control Points HACCP), oceny wpływu choroby na stan odżywienia i wpływu żywienia na wyniki leczenia chorób, organizowania żywienia indywidualnego, zbiorowego i leczniczego dostosowanego do wieku i stanu zdrowia pacjentów oraz prowadzenia edukacji żywieniowej. Zgodnie z posiadaną wiedzą i umiejętnościami uzyskanymi podczas studiów absolwenci są przygotowani do pracy w: publicznych i niepublicznych zakładach opieki zdrowotnej, zakładach żywienia zbiorowego i zakładach dostarczających pożywienie do szpitali i innych placówek zbiorowego żywienia (catering), organizacjach konsumenckich, placówkach sportowych i innych (w zależności od rodzaju dodatkowych kwalifikacji) oraz szkolnictwie - po ukończeniu specjalności nauczycielskiej (zgodnie z odpowiednim rozporządzeniem ministra właściwego do spraw szkolnictwa wyższego w sprawie standardów kształcenia nauczycieli). Absolwenci powinni znać język obcy na poziomie biegłości B2 Europejskiego Systemu Opisu Kształcenia Językowego Rady Europy oraz posiadać umiejętności posługiwania się językiem specjalistycznym z zakresu medycyny. Absolwenci studiów powinni posiadać predyspozycje psychofizyczne do pracy z ludźmi zdrowymi i chorymi. Powinni posiadać ponadto przygotowanie ogólne i zawodowe obowiązujące w ochronie zdrowia. Absolwenci powinni być przygotowani do podjęcia studiów drugiego stopnia.</kwalifikacje>
+		<dziekanat>Budynek D, ul. Ujejskiego 12, 48-300 Nysa</dziekanat>
+		<szerokosc>50.47891108161139</szerokosc>
+		<dlugosc>17.320592174357824</dlugosc>
+		<telefon>77 4355955</telefon>
+		<email>dziekanat.diet@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=7</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Filologia</nazwa>
+		<specjalnosci>filologia angielska, filologia germańska, język biznesu: angielski</specjalnosci>
+		<czas>6 semestrów = 3 lata</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Wyższe studia zawodowe na kierunku filologia, specjalność filologia angielska, specjalizacja tłumaczeniowa w zakresie języka trwają trzy lata (6 semestrów) i kończą się uzyskaniem tytułu licencjata. Absolwent posiada ogólne wykształcenie w zakresie filologii angielskiej, w zakresie specjalizacji tłumaczeniowej w angielskim języku biznesu, umożliwiające mu kontynuację edukacji na poziomie magisterskim na studiach w zakresie lingwistyki stosowanej lub filologii ze specjalnością translatoryczną lub w zakresie języka biznesu, jak również przygotowanie zawodowe do wykonywania zawodu tłumacza. Wyższe studia zawodowe na kierunku filologia, specjalność filologia angielska, specjalizacja nauczycielska trwają trzy lata (6 semestrów) i kończą się uzyskaniem tytułu licencjata filologii angielskiej. Program studiów obejmuje, obok przedmiotów kierunkowych, blok przedmiotów psychologiczno-pedagogicznych i dydaktycznych, które przygotowują studenta do pracy w charakterze nauczyciela języka angielskiego. Absolwent tej specjalności posiada ogólne wykształcenie w zakresie filologii angielskiej umożliwiające kontynuowanie nauki na poziomie magisterskim. Na potrzeby organizacji procesu edukacyjnego w szkole, program studiów obejmuje blok przedmiotów tłumaczeniowych, w tym tłumaczenia pisemne i ustne, które będą również pomocne w wykonywaniu dodatkowo pracy tłumacza języka angielskiego.</kwalifikacje>
+		<dziekanat>Budynek A, ul. Chodowieckiego, 48-300 Nysa</dziekanat>
+		<szerokosc>50.474742053680934</szerokosc>
+		<dlugosc>17.337604016700222</dlugosc>
+		<telefon>77 4091175</telefon>
+		<email>dziekanat.filo@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=11,129,0,0,14</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Finanse i rachunkowość</nazwa>
+		<specjalnosci>finanse przedsiębiorstw, rachunkowość i kontrola finansowa</specjalnosci>
+		<czas>6 semestrów = 3 lata</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Kierunek finanse i rachunkowość łączy w sobie cechy i wymagania stawiane współczesnym absolwentom studiów licencjackich, którzy powinny posiadać podstawową wiedzę z dziedziny ekonomii, prawa, organizacji, finansów, rachunkowości i technik informatycznych z zaawansowaną wiedzą adekwatną dla specjalności ekonomicznych z zakresu zarządzania i finansów. Kierunek ten można uważać za uniwersalny z punktu widzenia prowadzenia własnego przedsiębiorstwa produkcyjno-usługowego, zatrudnienia w podobnym przedsiębiorstwie regionu lub w każdej innej organizacji w dziale finansowym lub instytucji finansowej. Absolwent kierunku finanse i rachunkowość będzie specjalistą zdolnym do podejmowania zadań i rozwiązywania problemów występujących w zarządzaniu finansami organizacji gospodarczych, jednostek budżetowych oraz instytucjach finansowych; przygotowania dokumentów (sprawozdań finansowych), dokonywania analiz i podejmowania decyzji inwestycyjnych takich jak wprowadzanie nowego produktu, usługi czy technologii, doboru źródeł finansowania i szacowania ryzyka związanego z tymi decyzjami, doboru instrumentów zabezpieczających przed ryzykiem. Zdobędzie wiedzę menedżerską wspomagającą współpracę między jednostkami gospodarczymi i instytucjami finansowymi.</kwalifikacje>
+		<dziekanat>Budynek A, ul. Chodowieckiego, 48-300 Nysa</dziekanat>
+		<szerokosc>50.474742053680934</szerokosc>
+		<dlugosc>17.337604016700222</dlugosc>
+		<telefon>77 4091175</telefon>
+		<email>dziekanat.fins@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=8</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Informatyka</nazwa>
+		<specjalnosci>bezpieczeństwo sieci i systemów informatycznych, gry komputerowe i multimedia, systemy internetowe, systemy i sieci komputerowe</specjalnosci>
+		<czas>7 semestrów</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Wyższe studia I stopnia na kierunku informatyka w ramach specjalności systemy internetowe oraz systemy i sieci komputerowe trwają trzy i pół roku (7 semestrów) i kończą się uzyskaniem tytułu inżyniera. Absolwent posiada znajomość standardowych i nowoczesnych metod oraz algorytmów informatyki umożliwiającą samodzielne rozwiązywanie problemów informatycznych, w tym ich analizę oraz implementację, przygotowanie, realizację i weryfikację projektów informatycznych. Biegle programuje w kilku językach programowania, zna oraz umie wykorzystywać i administrować serwerowymi platformami operacyjnymi Windows Sewer/7/10 i Linux, a także projektuje i realizuje systemy internetowe, bazy danych oraz sieci komputerowe.</kwalifikacje>
+		<dziekanat>	Budynek G, ul. Obrońców Tobruku 5, 48-300 Nysa</dziekanat>
+		<szerokosc>50.48135922549875</szerokosc>
+		<dlugosc>17.320173223537797</dlugosc>
+		<telefon>77 4091681</telefon>
+		<email>dziekanat.info@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=2</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Jazz i muzyka estradowa</nazwa>
+		<specjalnosci>realizacja dźwięku, wokalistyka lub instrumentalistyka, edukacja artystyczna w jazzie i muzyce estradowej</specjalnosci>
+		<czas>6 semestrów = 3 lata</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Studia pierwszego stopnia na kierunku jazz i muzyka estradowa o profilu praktycznym trwają trzy lata (6 semestrów) i kończą się uzyskaniem tytułu licencjata. Absolwent posiada ogólne wykształcenie w zakresie jazzu i muzyki estradowej umożliwiające mu kontynuację edukacji na poziomie magisterskim, jak również do prowadzenia samodzielnej pracy artystycznej jako solista, kompozytor i aranżer.</kwalifikacje>
+		<dziekanat>Budynek A, ul. Chodowieckiego, 48-300 Nysa</dziekanat>
+		<szerokosc>50.474742053680934</szerokosc>
+		<dlugosc>17.337604016700222</dlugosc>
+		<telefon>77 4091176</telefon>
+		<email>dziekanat.jazz@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=10</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Kosmetologia</nazwa>
+		<specjalnosci>chemia i technologia kosmetyków, kosmetologia specjalistyczna</specjalnosci>
+		<czas>6 semestrów = 3 lata</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Studia I stopnia na kierunku kosmetologia trwają trzy lata (6 semestrów) i kończą sie uzyskaniem tytułu Licencjonowanego Kosmetologa. Absolwent kierunku kosmetologia posiada podstawową wiedzę z zakresu m.in. medycyny, chemii, biologii, farmacji, włada językiem obcym na poziomie biegłości 2B. Ponadto dysponuje szczegółową wiedzą w zakresie receptury i technologii leków dermatologicznych i kosmetyków, marketingu i kontroli jakości środków służących pielęgnacji i upiększaniu ciała, oraz technik poprawiających funkcje i estetykę skóry. Absolwenci specjalności chemia i technologia kosmetyków operują wiedzą specjalistyczną ukierunkowaną na farmakologię i recepturę substancji chemicznych aplikowanych bezpośrednio na skórę.</kwalifikacje>
+		<dziekanat>Budynek D, ul. Ujejskiego 12, 48-300 Nysa</dziekanat>
+		<szerokosc>50.47891108161139</szerokosc>
+		<dlugosc>17.320592174357824</dlugosc>
+		<telefon>77 4355955</telefon>
+		<email>dziekanat.kosm@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=12</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Psychofizyczne kształtowanie człowieka</nazwa>
+		<specjalnosci>trener osobisty, rekreacja psychoruchowa</specjalnosci>
+		<czas>6 semestrów = 3 lata</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Trener osobisty i rekreacja psychoruchowa to specjalności na kierunku psychofizyczne kształtowanie Państwowej Wyższej Szkoły Zawodowej w Nysie, którego program kształcenia jest bardzo bogaty i związany z trzema obszarami: psychologią, żywieniem i sportem. Takie nowatorskie zestawienie przedmiotów sprawia że specjalność trener osobisty, który kończy się dyplomem licencjata, staje się bardzo atrakcyjny, jak również daje możliwość dalszej nauki na studiach magisterskich na każdej uczelni Akademii Wychowania Fizycznego w Polsce. Ogłoszony przez Rektora PWSZ w Nysie program 5 dodatkowych Kompetencji dofinansowuje studentom udział w obozach instruktorskich, certyfikowanych kursach specjalistycznych i innych formach szkolenia wybranych przez studentów. Ponadto program ERASMUS + daje możliwości wyjazdu na studia na zagraniczną uczelnię partnerską oraz odbycie zagranicznych praktyk.Będąc na naszych studiach w Państwowej Wyższej Szkole Zawodowej w Nysie za darmo studiujesz, za darmo mieszkasz.</kwalifikacje>
+		<dziekanat>Budynek D, ul. Ujejskiego 12, 48-300 Nysa</dziekanat>
+		<szerokosc>50.47891108161139</szerokosc>
+		<dlugosc>17.320592174357824</dlugosc>
+		<telefon>77 4355952</telefon>
+		<email>dziekanat.psfi@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/index.php?p=43,1113,0,0,-1,381</WWW>
+	</kierunek>
+	<kierunek>
+		<nazwa>Zarządzanie i inżynieria produkcji</nazwa>
+		<specjalnosci>automatyzacja produkcji i systemy mechatroniczne, inżynieria jakości, Inżynieria zrównoważonego rozwoju, zarządzanie produkcją i usługami</specjalnosci>
+		<czas>7 semestrów = 3,5 roku</czas>
+		<tryb>Studia stacjonarne, Studia niestacjonarne</tryb>
+		<kwalifikacje>Kierunek zarządzanie i inżynieria produkcji przygotowuje studentów studiów inżynierskich do sprostania wymaganiom stawianym przez krajowy i zagraniczny rynek pracy. Kształcenie studentów ukierunkowane jest na zagadnienia wytwarzania i planowania procesów produkcyjnych na bazie poszerzonej wiedzy o zarządzaniu, Absolwenci będą posiadać również wiedzę z zakresu ekonomii i prawa gospodarczego połączoną ze znajomością zaawansowanych technik informatycznych. Połączenie informacji z wielu dziedzin daje studentowi tej specjalności kompletną wiedzę o charakterze technicznym z zakresu inżynierii produkcji i usług. Program studiów obejmuje, oprócz zajęć dydaktycznych, 4 tygodniową praktykę zawodową. Praktyki będą się odbywały w zakładach produkcyjnych i usługowych, co stwarza dodatkową możliwość kontaktu z ewentualnymi przyszłymi pracodawcami. Absolwent posiada praktyczne umiejętności posługiwania się systemami stosowanymi w inżynierii produkcji i zarządzaniu. Absolwent może prowadzić własną firmę produkcyjną lub usługową jak również pracować w przedsiębiorstwie produkcyjnym na stanowisku inżyniera produkcji, kontroli jakości lub inżyniera rozwoju produktu w dziale projektowania i technicznego przygotowania produkcji, a także w działach organizacyjnego przygotowania produkcji lub przedsiębiorstwie usługowym realizując zadania z zakresu organizacji usług czy marketingu. Absolwenci są przygotowani do samodzielnego prowadzenia prac projektowych zarówno w odniesieniu do projektów technicznych jak i organizacyjnych. Uczelnia oferuje możliwość kształcenia studentów w trybie dziennym i zaocznym, Program studiów umożliwia kontynuację kształcenia na studiach magisterskich uczelni akademickich na kierunku zarządzanie i inżynieria produkcji.</kwalifikacje>
+		<dziekanat>	Budynek G, ul. Obrońców Tobruku 5, 48-300 Nysa</dziekanat>
+		<szerokosc>50.48135922549875</szerokosc>
+		<dlugosc>17.320173223537797</dlugosc>
+		<telefon>77 4091681</telefon>
+		<email>dziekanat.zarz@pwsz.nysa.pl</email>
+		<WWW>https://www.pwsz.nysa.pl/?p=15</WWW>
+	</kierunek>
+</kierunki>

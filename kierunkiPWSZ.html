@@ -1,0 +1,278 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Kierunki studiów w PWSZ w Nysie</title>
+  <meta name="description" content="Kierunki studiów w PWSZ w Nysie">
+  <meta name="author" content="SitePoint">
+  <script src="skrypty.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<script>
+let lista = [];
+let uczelnie = [];
+let isfirst = 1;
+$(document).ready(function(){
+  
+  var self = this;
+    $.ajax({
+        type: "GET",
+        url: "./kierunki.xml",
+        async:false,
+        dataType: "xml",                                                                        
+	success: function(xml) {
+        var select = $('#select');
+        var i = 0;
+        $(xml).find('kierunek').each(function(){
+            var nazwa = $(this).find('nazwa').text();
+            if(i == 0) select.append("<option  selected></option>")
+            select.append("<option>"+nazwa+"</option>");
+            var lat = $(this).find('szerokosc').text();
+            var lng = $(this).find('dlugosc').text();
+            var dziekanat = $(this).find('dziekanat').text();
+            var specjalnosci = $(this).find('specjalnosci').text();
+            var czas = $(this).find('czas').text();
+            var kwalifikacje = $(this).find('kwalifikacje').text();
+            var telefon = $(this).find('telefon').text();
+            var email = $(this).find('email').text();
+            var www = $(this).find('WWW').text();
+            var tryb = $(this).find('tryb').text();
+            var n = 1;
+            for(var c = 0; c < uczelnie.length; c++){
+              if(uczelnie[c].dziekanat == dziekanat)n = 0;
+            }
+            if(n == 1)
+            uczelnie.push({lat,lng,dziekanat});
+            lista.push({lat,lng,dziekanat,specjalnosci,czas,kwalifikacje,telefon,email,www,nazwa,tryb});
+            i++;
+          });
+
+	}
+  
+
+});
+
+
+$("#select").val(' ');
+init();
+});
+
+
+function initMap(val) {
+
+
+  let cent = {lat:50.47561468942627 , lng:17.328387823649535};
+
+if(val != ''){
+  
+  for(var c = 0; c < lista.length; c++){
+       if(lista[c].nazwa == val){
+         cent = {lat: parseFloat(lista[c].lat),lng: parseFloat(lista[c].lng)};
+       }
+
+  }
+
+
+}
+
+
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: cent,
+    disableDefaultUI: true,
+    zoomControl: true,
+  });
+  isfirst = 0;
+
+if(val == null || val == ''){
+
+  for(let i=0; i < uczelnie.length; i++){
+    
+    var marker = new google.maps.Marker({
+      position: {lat: parseFloat(uczelnie[i].lat), lng: parseFloat(uczelnie[i].lng)}
+    });
+    marker.setMap(map);
+    marker.description = new google.maps.InfoWindow({
+            content: uczelnie[i].dziekanat
+          });
+    google.maps.event.addListener(marker, 'click', function(){
+          this.description.setPosition(this.getPosition());
+          this.description.open(map); //map to display on
+        });
+  }
+
+}
+else if(val != ''){
+
+  for(var c = 0; c < lista.length; c++){
+       if(lista[c].nazwa == val){
+
+        var marker = new google.maps.Marker({
+          position: {lat: parseFloat(lista[c].lat), lng: parseFloat(lista[c].lng)},
+          title: "Dziekanat kierunku "+lista[c].nazwa + " , "+lista[c].dziekanat,
+          animation: google.maps.Animation.DROP,
+        });
+        marker.description = new google.maps.InfoWindow({
+            content:"Dziekanat kierunku "+lista[c].nazwa + " , "+lista[c].dziekanat
+          });
+        marker.setMap(map);
+        google.maps.event.addListener(marker, 'click', function(){
+          this.description.setPosition(this.getPosition());
+          this.description.open(map); //map to display on
+        });
+       }
+
+  }
+
+
+}
+
+
+}
+
+function init(){
+  var oo = document.getElementById("dane");
+  oo.innerHTML = "";
+
+  oo.style.overflow = "hidden";
+
+  var text = `<span class= "bold" id ="nazwa1"></span><br>
+      <span id = "nazwa"></span><br>
+      <span class= "bold" id ="specjalnosci1"></span><br>
+      <span id = "specjalnosci"></span><br>
+      <span class= "bold" id ="czas1"></span><br>
+      <span id = "czas"></span><br>
+      <span class= "bold" id ="tryb1"></span><br>
+      <span id = "tryb"></span><br>
+      <span class= "bold" id ="kwalifikacje1"></span><br>
+      <span id = "kwalifikacje"></span><br>
+      <span class= "bold" id ="adres1"></span><br>
+      <span id = "adres"></span><br>
+      <span class= "bold" id ="wsp1"></span><br>
+      <span id = "wsp"></span><br>
+      <span class= "bold" id ="telefon1"></span><br>
+      <span id = "telefon"></span><br>
+      <span class= "bold" id ="email1"></span><br>
+      <span id = "email"></span><br>
+      <span class= "bold" id ="www1"></span><br>
+      <a id = "www" href=" "></a>`;
+      $( ".dane" ).append(text);
+}
+
+function changed(){
+  let val = document.getElementById("select").value;
+  initMap(val);
+  
+  if(val != ''){
+    document.getElementById("dane").style.overflow = "auto";
+    for(var c = 0; c < lista.length; c++){
+       if(lista[c].nazwa == val){
+
+        document.getElementById("nazwa").innerHTML = lista[c].nazwa;
+        document.getElementById("specjalnosci").innerHTML = lista[c].specjalnosci;
+        document.getElementById("czas").innerHTML = lista[c].czas;
+        document.getElementById("tryb").innerHTML = lista[c].tryb;
+        document.getElementById("kwalifikacje").innerHTML = lista[c].kwalifikacje;
+        document.getElementById("adres").innerHTML = lista[c].dziekanat;
+        document.getElementById("wsp").innerHTML = lista[c].lat + "°N, " + lista[c].lng +"°E";
+        document.getElementById("telefon").innerHTML = "+"+lista[c].telefon;
+        document.getElementById("email").innerHTML = lista[c].email;
+        document.getElementById("www").innerHTML = lista[c].www;
+        document.getElementById("www").href = lista[c].www;
+        
+        document.getElementById("nazwa1").innerHTML = "Nazwa kierunku studiów:";
+        document.getElementById("specjalnosci1").innerHTML = "Specjalności:";
+        document.getElementById("czas1").innerHTML = "Czas trwania studiów:";
+        document.getElementById("tryb1").innerHTML = "Tryb studiowania:";
+        document.getElementById("kwalifikacje1").innerHTML = "Kwalifikacje absolwenta:";
+        document.getElementById("adres1").innerHTML = "Adres dziekanatu:";
+        document.getElementById("wsp1").innerHTML = "Współrzędne geograficzne:"
+        document.getElementById("telefon1").innerHTML = "Telefon:"
+        document.getElementById("email1").innerHTML = "eMail:"
+        document.getElementById("www1").innerHTML = "Strona WWW kierunku:";
+
+
+       }
+
+  }
+
+  }else{
+
+      init();
+      initmap();
+
+  }
+
+  $('#select').blur();
+
+}
+function reset(){
+  init();
+  initMap();
+  $("#select").val(' ');
+}
+
+</script>
+
+<body>
+    
+  <div class="main">
+    <H2>Kierunki studiów w Państwowej Wyższej Szkoły Zawodowej w Nysie</H2>
+  </br> </br>
+    <div class="mapa">
+
+      <div id="map"></div>
+
+          <script async
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTUAnOQqV5D423eEyKd7M9Eq2GOzKrRvU&callback=initMap">
+          </script>
+    Kliknij znacznik na mapie aby zobaczyć informacje.
+    </div>
+
+    <div class="dane" id ="dane">
+      <!-- <span class= "bold" id ="nazwa1"></span><br>
+      <span id = "nazwa"></span><br>
+      <span class= "bold" id ="specjalnosci1"></span><br>
+      <span id = "specjalnosci"></span><br>
+      <span class= "bold" id ="czas1"></span><br>
+      <span id = "czas"></span><br>
+      <span class= "bold" id ="tryb1"></span><br>
+      <span id = "tryb"></span><br>
+      <span class= "bold" id ="kwalifikacje1"></span><br>
+      <span id = "kwalifikacje"></span><br>
+      <span class= "bold" id ="adres1"></span><br>
+      <span id = "adres"></span><br>
+      <span class= "bold" id ="wsp1"></span><br>
+      <span id = "wsp"></span><br>
+      <span class= "bold" id ="telefon1"></span><br>
+      <span id = "telefon"></span><br>
+      <span class= "bold" id ="email1"></span><br>
+      <span id = "email"></span><br>
+      <span class= "bold" id ="www1"></span><br>
+      <a id = "www" href= ""></a> -->
+       
+    </div>
+    <div class="kierunki">
+        <h3>Kierunki studiów:</h3>
+          <select class="form-control" id="select" onFocus="reset()" onChange="changed()" autofocus>
+            
+
+          </select>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+
+</html>
