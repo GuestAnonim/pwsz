@@ -16,7 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<script>
+<script async defer>
 let lista = [];
 let uczelnie = [];
 let isfirst = 1;
@@ -65,11 +65,14 @@ $("#select").val(' ');
 init();
 });
 
-
+let srodek = {lat:50.47561468942627 , lng:17.328387823649535};
+var map;
+var markersArray = [];
+let cent = {lat:50.47561468942627 , lng:17.328387823649535};
 function initMap(val) {
 
 
-  let cent = {lat:50.47561468942627 , lng:17.328387823649535};
+  
 
 if(val != ''){
   
@@ -83,23 +86,46 @@ if(val != ''){
 
 }
 
-
-  const map = new google.maps.Map(document.getElementById("map"), {
+if(isfirst == 1){
+  map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,
     center: cent,
     disableDefaultUI: true,
     zoomControl: true,
   });
-  isfirst = 0;
+  isfirst= 0;
+}
 
 if(val == null || val == ''){
+  markerUczelni(val);
+  
 
+}
+else if(val != ''){
+  for (var i = 0; i < markersArray.length; i++ ) {
+    markersArray[i].setMap(null);
+  }
+  markersArray.length = 0;
+
+  
+  markerDziekanatu(val);
+  
+
+}
+
+
+}
+
+function markerUczelni(val){
+  map.panTo(srodek);
+  map.setZoom(14);
   for(let i=0; i < uczelnie.length; i++){
     
     var marker = new google.maps.Marker({
       position: {lat: parseFloat(uczelnie[i].lat), lng: parseFloat(uczelnie[i].lng)}
     });
     marker.setMap(map);
+    markersArray.push(marker);
     marker.description = new google.maps.InfoWindow({
             content: uczelnie[i].dziekanat
           });
@@ -110,7 +136,8 @@ if(val == null || val == ''){
   }
 
 }
-else if(val != ''){
+
+function markerDziekanatu(val){
 
   for(var c = 0; c < lista.length; c++){
        if(lista[c].nazwa == val){
@@ -123,7 +150,23 @@ else if(val != ''){
         marker.description = new google.maps.InfoWindow({
             content:"Dziekanat kierunku "+lista[c].nazwa + " , "+lista[c].dziekanat
           });
-        marker.setMap(map);
+       
+        markersArray.push(marker);
+
+          map.panTo(srodek);
+
+          window.setTimeout(() => {
+            marker.setMap(map);
+          }, 500);
+
+        window.setTimeout(() => {
+            map.panTo(marker.getPosition());
+          }, 1000);
+
+          window.setTimeout(() => {
+            map.setZoom(17);
+          }, 1300);
+        
         google.maps.event.addListener(marker, 'click', function(){
           this.description.setPosition(this.getPosition());
           this.description.open(map); //map to display on
@@ -131,10 +174,6 @@ else if(val != ''){
        }
 
   }
-
-
-}
-
 
 }
 
@@ -216,7 +255,7 @@ function changed(){
 }
 function reset(){
   init();
-  initMap();
+  markerUczelni();
   $("#select").val(' ');
 }
 
