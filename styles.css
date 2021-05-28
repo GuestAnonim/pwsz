@@ -92,10 +92,22 @@ H2{
     .mapa{
         width:100%;
         float:none;
+        height:40rem;
     }
     .dane{
         float:none;
         width:100%;
+        height:40rem;
+    }
+    .main{
+        margin-top:5rem;
+        padding:0px;
+        width:100%;
+        height:100%;
+        padding-top:0px !important; 
+    }
+    .pad{
+        padding:10px;
     }
 
 }
