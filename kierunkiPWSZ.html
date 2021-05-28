@@ -157,15 +157,15 @@ function markerDziekanatu(val){
 
           window.setTimeout(() => {
             marker.setMap(map);
-          }, 500);
+          }, 200);
 
         window.setTimeout(() => {
             map.panTo(marker.getPosition());
-          }, 1000);
+          }, 700);
 
           window.setTimeout(() => {
             map.setZoom(17);
-          }, 1300);
+          }, 1000);
         
         google.maps.event.addListener(marker, 'click', function(){
           this.description.setPosition(this.getPosition());
